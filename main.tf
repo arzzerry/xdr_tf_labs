@@ -16,3 +16,7 @@ resource "aws_launch_configuration" "example" {
     create_before_destroy = true
   }
 }
+
+data "aws_vpc" "default" {
+  default = true
+}
