@@ -1,4 +1,4 @@
-resource "aws_security_group" "instance_sg" {
+resource "aws_security_group" "instance" {
   name        = "terraform-example-instance"
   description = "Allow http inbound traffic"
   ingress {

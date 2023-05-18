@@ -2,7 +2,7 @@
 resource "aws_launch_configuration" "example" {
   image_id        = "ami-0578f2b35d0328762"
   instance_type   = "t2.micro"
-  security_groups = [aws_security_group.instance_sg.id]
+  security_groups = [aws_security_group.instance.id]
 
   user_data = <<-EOF
                 #!/bin/bash
