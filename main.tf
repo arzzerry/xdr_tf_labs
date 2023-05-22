@@ -1,8 +1,9 @@
 # This is the ASG launch configuraiton block
 resource "aws_launch_configuration" "example" {
-  image_id        = "ami-0578f2b35d0328762"
+  image_id        = "ami-024e6efaf93d85776"
   instance_type   = "t2.micro"
   security_groups = [aws_security_group.instance.id]
+    key_name      = "xdr_lab"
 
   user_data = <<-EOF
                 #!/bin/bash
